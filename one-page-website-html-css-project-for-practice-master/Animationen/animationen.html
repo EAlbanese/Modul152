@@ -22,44 +22,11 @@
                         <li><a href="../index.html" data-after="Home">Home</a></li>
                         <li><a href="../Mockups/mockups.html" data-after="Service">Mockups</a></li>
                         <li><a href="../Urheberrechte/urheberrechte.html" data-after="Projects">Urheberrechte</a></li>
-                        <li><a href="#about" data-after="About">Dateiformate</a></li>
-                        <li><a href="../Animationen/animationen.html" data-after="Animationen">Animationen</a></li>
+                        <li><a href="../Dateiformate/dataiformate.html" data-after="About">Dateiformate</a></li>
+                        <li><a href="#" data-after="Animationen">Animationen</a></li>
                         <li><a href="../Quellenangaben/quellen.html" data-after="Quellen">Quellenangaben</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Header -->
-
-
-    <!-- Hero Section  -->
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Hallo, <span></span></h1>
-                <h1>Mein Name ist, <span></span></h1>
-                <h1>Elia Albanese<span></span></h1>
-                <a href="#about" type="button" class="cta">Einleitung</a>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero Section  -->
-
-    <!-- Willkommen und Zeitplan -->
-    <section id="about">
-        <div class="about container">
-            <div class="col-left">
-                <div class="about-img">
-                    <img src="./img/img-2.png" alt="img">
-                </div>
-            </div>
-            <div class="col-right">
-                <h1 class="section-title">Projekt <span>Einleitung</span></h1>
-                <h2>Modul 152 - Herr Müller</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum
-                    omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
-                <a href="#zeitplan" class="cta">Zeitplan</a>
             </div>
         </div>
     </section>
@@ -82,9 +49,16 @@
                     <a href="../one-page-website-html-css-project-for-practice-master/Mockups/mockups.html" class="cta">Zu den Mockups</a>
                 </div>
             </div>
+            <div class="scrollanimation">
+                <section id="section01" class="demo">
+                    <a href="#section02"><span></span>Scroll</a>
+                </section>
+            </div>
         </section>
     </div>
     <!-- End Zeiplan-->
+
+
 
     <!-- Service Section -->
     <section id="services">
@@ -249,6 +223,16 @@
         </div>
     </section>
     <!-- End Footer -->
+    <script>
+        $(function() {
+            $('a[href*=#services]').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
+            });
+        });
+    </script>
     <script src="./app.js"></script>
 </body>
 
