@@ -27,3 +27,14 @@ menu_item.forEach((item) => {
 window.onload = function() {
     document.getElementById("my_audio").play();
 }
+
+window.addEventListener(
+    "scroll",
+    () => {
+        document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+        );
+    },
+    false
+);

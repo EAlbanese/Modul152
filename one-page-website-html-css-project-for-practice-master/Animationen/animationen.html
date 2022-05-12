@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../app.js"></script>
     <link rel="icon" href="../one-page-website-html-css-project-for-practice-master/img/TabLogo.png">
     <title>Dateiformate</title>
 </head>
@@ -33,167 +34,90 @@
     <!-- End About Section -->
 
     <!-- Zeitplan -->
-    <div id="zeitplan">
+    <div id="css3">
         <section id="about">
             <div class="about container">
-                <div class="col-left">
-                    <div class="about-img">
-                        <img src="./img/img-2.png" alt="img">
-                    </div>
-                </div>
                 <div class="col-right">
-                    <h1 class="section-title">Projekt <span>Einleitung</span></h1>
-                    <h2>Modul 152 - Herr Müller</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum
-                        omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
-                    <a href="../one-page-website-html-css-project-for-practice-master/Mockups/mockups.html" class="cta">Zu den Mockups</a>
+                    <h1 class="section-title">Animation <span>CSS3</span></h1>
+                    <h2>Loading Animation</h2>
+                    <br>
+                    <div id="animation1body">
+                        <div class="loading_container">
+                            <div class="loading">
+                            </div>
+                            <h3>loading...</h3>
+                        </div>
+                    </div>
+                    <a href="#svg" class="cta">SVG-Animation</a>
                 </div>
-            </div>
-            <div class="scrollanimation">
-                <section id="section01" class="demo">
-                    <a href="#section02"><span></span>Scroll</a>
-                </section>
             </div>
         </section>
     </div>
     <!-- End Zeiplan-->
 
-
-
-    <!-- Service Section -->
-    <section id="services">
-        <div class="services container">
-            <div class="service-top">
-                <h1 class="section-title">Serv<span>i</span>ces</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
-            </div>
-            <div class="service-bottom">
-                <div class="service-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+    <!-- Zeitplan -->
+    <div id="svg">
+        <section id="about">
+            <div class="about container">
+                <div class="col-right">
+                    <h1 class="section-title">Animation <span>SVG</span></h1>
+                    <h2>Cross in square</h2>
+                    <br>
+                    <div id="animationsvgbody">
+                        <svg viewBox="0 0 300 200">
+                            <rect width="100%" height="100%" class="background" />
+                            <g class="cross">
+                                <line x1="130" y1="80" x2="170" y2="120" />
+                                <line x1="130" y1="120" x2="170" y2="80" />
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="#canvas" class="cta">Canvas Animation</a>
                 </div>
             </div>
-        </div>
+        </section>
+    </div>
+    <!-- End Zeiplan-->
+
+    <!-- Zeitplan -->
+    <div id="canvas">
+        <section id="about">
+            <div class="about container">
+                <div class="col-right">
+                    <h1 class="section-title">Animation <span>SVG</span></h1>
+                    <h2>Square</h2>
+                    <br>
+                    <div id="animationcanvasbody">
+                        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    </div>
+                    <a href="#scrollanimation" class="cta">Scroll animation</a>
+                </div>
+            </div>
+    </div>
     </section>
-    <!-- End Service Section -->
+    </div>
+    <!-- End Zeiplan-->
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">Recent <span>Projects</span></h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 1</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
+    <!-- Zeitplan -->
+    <div id="scrollanimation">
+        <section id="about">
+            <div class="about container">
+                <div class="col-right">
+                    <h1 class="section-title"><span>Scroll </span>Anmiation</h1>
+                    <h2>Der drehende Mann</h2>
+                    <iframe></iframe>
+                    <div id="scrollanimationbody">
+                        <svg id="scrollsvg" width="100" height="100" viewBox="0 0 24 24">
+                            <path d="M21,9H15V22H13V16H11V22H9V9H3V7H21M12,2A2,2 0 0,1 14,4A2,2 0 0,1 12,6C10.89,6 10,5.1 10,4C10,2.89 10.89,2 12,2Z" />
+                          </svg>
                     </div>
-                    <div class="project-img">
-                        <img src="./img/img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 2</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 3</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 4</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 5</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/img-1.png" alt="img">
-                    </div>
+                    <a href="../one-page-website-html-css-project-for-practice-master/Mockups/mockups.html" class="cta">SVG-Animation</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Projects Section -->
+        </section>
+    </div>
+    <!-- End Zeiplan-->
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact container">
-            <div>
-                <h1 class="section-title">Contact <span>info</span></h1>
-            </div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <h2>+41 76 511 63 53</h2>
-                        <h2>044 831 10 80</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <h2>elia.albaense@edu.tbz.ch</h2>
-                        <h2>eliaalbaense@icloud.com</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-                    <div class="contact-info">
-                        <h1>Address</h1>
-                        <h2>Steinackerweg 6, Walliselle, Zürich</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Contact Section -->
 
     <!-- Footer -->
     <section id="footer">
@@ -217,23 +141,12 @@
                 </div>
             </div>
             <p>Copyright © 2022 Albanese. All rights reserved</p>
-            <a href="../Impressum/impressum.html" style="text-decoration: none; color: white;">
+            <a href="../one-page-website-html-css-project-for-practice-master/Impressum/impressum.html" style="text-decoration: none; color: white;">
                 <p>Impressum</p>
             </a>
         </div>
     </section>
     <!-- End Footer -->
-    <script>
-        $(function() {
-            $('a[href*=#services]').on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top
-                }, 500, 'linear');
-            });
-        });
-    </script>
-    <script src="./app.js"></script>
 </body>
 
 </html>

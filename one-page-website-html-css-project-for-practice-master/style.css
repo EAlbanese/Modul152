@@ -953,3 +953,124 @@
     #projects .all-projects .project-img-formate {
         height: 100%;
     }
+    
+     :root {
+        --animation-speed: 2s;
+        --primary-color: #fff;
+        --secondary-color: #000;
+        --background-color: #212121;
+        --text-color: #fff;
+        --font: sans-serif;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .animationcssbody {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--background-color);
+        font-family: var(--font);
+    }
+    
+    .loading_container {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /*   background: greenyellow; */
+        border-radius: 150px;
+    }
+    
+    .loading {
+        width: 100%;
+        height: 100%;
+        border-radius: 150px;
+        border-right: 0.3rem solid black;
+        animation: animate var(--animation-speed) linear infinite;
+    }
+    
+    .loading_container h3 {
+        color: var(--text-color);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Animation */
+    
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes move-around {
+        0% {
+            transform: translate(-40%, -35%);
+        }
+        25% {
+            transform: translate(40%, -35%);
+        }
+        50% {
+            transform: translate(40%, 35%);
+        }
+        75% {
+            transform: translate(-40%, 35%);
+        }
+        100% {
+            transform: translate(-40%, -35%);
+        }
+    }
+    
+    .animationsvgbody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    svg {
+        max-width: 50vw;
+        max-height: 80vh;
+    }
+    
+    .background {
+        fill: #03cc83;
+    }
+    
+    .cross {
+        animation: move-around 5s infinite;
+        stroke: #262d3d;
+        stroke-width: 10px;
+    }
+    
+    .animationcanvasbody {
+        height: 50px;
+        width: 100px;
+    }
+    
+    .scrollsvg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        animation: rotate 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
